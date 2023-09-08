@@ -27,6 +27,8 @@ describe('Shopping Tests', () => {
     cy.get(".sort-control-btn-dropdown.hidden-xs", {timeout:20000}).click();
     cy.contains("Pret crescator", {timeout: 20000}).click({ force: true });
     cy.wait(2000);
+    cy.get(".star-rating-container", {timeout: 20000}).eq(2).click();
+    cy.wait(2000);
     cy.contains("Adauga in Cos", {timeout:20000}).eq(0).scrollIntoView().click();
 
     // VERIFY CART
