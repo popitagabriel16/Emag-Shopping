@@ -32,7 +32,7 @@ class ShoppingPage {
     addToCartTVAccessory() {
       const filterRating = ".star-rating-container";
       const filterDropdown = ".sort-control-btn-dropdown.hidden-xs";
-      const filterSamsung = "[data-name='Samsung']";
+      const filterSamsung = "[data-name='Samsungs']";
       const addToCart = "Adauga in Cos";
   
       cy.wait(2000);
